@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: 10px;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.img{
+    height: 75px;
+    width: 75px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.details{
+    width: 100%;
+}
+.detail{
+    height: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    position: relative;
+    overflow: hidden;
+}
+.title .name{
+    width: 60%;
+}
+.title .about{
+    width: 85%;
+}
+.conetents{
+    width: 100%;
+    margin-top: 20px;
+}
+.conetent{
+    overflow: hidden;
+    position: relative;
+}
+.conetent1{
+    width: 75%;
+    height: 15px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    margin: 10px;
+}
+.conetent2{
+    width: 95%;
+    height: 15px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    margin: 10px;
+}
+.conetent3{
+    width: 50%;
+    height: 15px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    margin: 10px;
+}
+.button{
+    display: flex;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    background: #d9d9d9;
+    position: relative;
+    overflow: hidden;
+}
+.btn1{
+    margin-right: 10px;
+}
+.btn2{
+    margin-left: 10px;
+}
+.detail::before,
+.img::before,
+.conetent::before,
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right,#d9d9d9 0%, rgba(0,0,0,0.05));
+    background-size: 450px 400px;
+    background-repeat: no-repeat;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: -450px 0;
+    }
+    100%{
+        background-position: 450px 0;
+    }
+}
